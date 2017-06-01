@@ -1,16 +1,53 @@
 # credit-card-form
 
-[![Travis][build-badge]][build]
-[![npm package][npm-badge]][npm]
-[![Coveralls][coveralls-badge]][coveralls]
+Credit card react component
 
-Describe credit-card-form here.
+## Usage
 
-[build-badge]: https://img.shields.io/travis/user/repo/master.png?style=flat-square
-[build]: https://travis-ci.org/user/repo
+### Install
+```
+npm i @react-ag-components/credit-card-form --save
+```
+### Use in your project
+```
+import CreditCardForm from '@react-ag-components/credit-card-form'
+```
 
-[npm-badge]: https://img.shields.io/npm/v/npm-package.png?style=flat-square
-[npm]: https://www.npmjs.org/package/npm-package
+```
+onChange = (card) => {
+  console.log(card)
+}
 
-[coveralls-badge]: https://img.shields.io/coveralls/user/repo/master.png?style=flat-square
-[coveralls]: https://coveralls.io/github/user/repo
+
+<CreditCardForm
+  onChange={this.onChange}
+/>
+
+```
+
+### Properties
+
+
+## Contributing
+
+Get the repository
+```
+git clone https://github.com/alphillips/credit-card-form.git
+```
+
+Update dependencies
+```
+npm install
+```
+
+Run the project
+```
+npm start
+```
+
+### Deploy to npm
+#### Build
+`npm run build -- --copy-files`
+
+#### Publish
+`npm publish --access public`

@@ -1,6 +1,6 @@
 {
-  "name": "credit-card-form",
-  "version": "1.0.0",
+  "name": "@react-ag-components/credit-card-form",
+  "version": "0.0.1",
   "description": "credit-card-form React component",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -18,7 +18,11 @@
     "test:coverage": "nwb test-react --coverage",
     "test:watch": "nwb test-react --server"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@react-ag-components/input": "0.0.3",
+    "payment": "^2.2.1",
+    "prop-types": "^15.5.10"
+  },
   "peerDependencies": {
     "react": "15.x"
   },
@@ -30,7 +34,10 @@
   "author": "",
   "homepage": "",
   "license": "MIT",
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alphillips/credit-card-form.git"
+  },
   "keywords": [
     "react-component"
   ]
